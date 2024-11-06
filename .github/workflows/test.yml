@@ -1,9 +1,12 @@
-name: GitHub Actions Demo
-
-on: [push]
-
 jobs:
-  echo_hello_world:
+  echo_hello:
     runs-on: ubuntu-latest
-    steps:
-      - run: echo "hello world!!"
+    steps: 
+      - name: "挨拶"
+        run: echo "Nice to meet you!!"
+
+      - name: "名前を言う"
+        run: echo "My Name is Taro!!"
+
+      - name: "趣味を話す"
+        run: echo "I love programming!!"
