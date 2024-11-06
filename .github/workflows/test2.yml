@@ -1,0 +1,27 @@
+name: Run tree_file in GitHub Actions
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run_tree_file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  #👈リポジトリのソースを持ってくる
+
+      - name: Run Tree
+        run: apt install tree && tree
+
+      # - name: Set up Node.js
+      #   uses: actions/setup-node@v3  #👈Node.jsを使えるようにする
+      #   with:
+      #     node-version: '20'
+
+      # - name: Install dependencies
+      #   run: npm install
+
+      # - name: Run script
+      #   run: node index.js
