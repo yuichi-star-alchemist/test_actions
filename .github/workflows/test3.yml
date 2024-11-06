@@ -1,4 +1,4 @@
-name: Run tree_file in GitHub Actions
+name: Run cat_file in GitHub Actions
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4  #👈リポジトリのソースを持ってくる
 
       - name: Run Tree
-        run: cat
+        run: cat REAME.md
 
       # - name: Set up Node.js
       #   uses: actions/setup-node@v3  #👈Node.jsを使えるようにする

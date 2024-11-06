@@ -1,4 +1,4 @@
-name: Run tree_file in GitHub Actions
+name: Run echo_programs in GitHub Actions
 
 on:
   push:
@@ -6,14 +6,14 @@ on:
       - main
 
 jobs:
-  run_tree_file:
+  echo_programs:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4  #👈リポジトリのソースを持ってくる
+      - name: Run echo programs1
+        run echo '/usr/bin/ is :' && ls -al /usr/bin
 
-      - name: Run Tree
-        run: tree
+      - name: Run echo programs2
+        run echo '/usr/local/bin/ is :' && ls -al /usr/local/bin
 
       # - name: Set up Node.js
       #   uses: actions/setup-node@v3  #👈Node.jsを使えるようにする
