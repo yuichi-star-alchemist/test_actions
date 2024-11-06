@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: /usr/bin programs
-        run ls /usr/bin
+        run ls "/usr/bin"
 
       - name: /usr/local/bin programs
-        run ls /usr/local/bin
+        run ls "/usr/local/bin"
 
       # - name: Set up Node.js
       #   uses: actions/setup-node@v3  #👈Node.jsを使えるようにする
