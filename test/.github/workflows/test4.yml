@@ -1,0 +1,8 @@
+name: test actions
+
+jobs:
+  test_action:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: "test"
+        run: echo "test is success"
