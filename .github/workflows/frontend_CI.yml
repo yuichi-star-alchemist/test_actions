@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: "22.11.0"
       
-      - run: npm ci
+      - run: npm ci --force
         working-directory: ./frontend
 
       - name: Run Lint
