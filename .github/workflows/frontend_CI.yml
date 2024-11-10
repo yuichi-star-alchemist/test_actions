@@ -9,7 +9,7 @@ on:
     #   - ".github/"
 
 jobs:
-  Lint_&_Test:
+  Lint_and_Test:
     runs-on: ubuntu-latest
     steps:
       - name: Use Repository
