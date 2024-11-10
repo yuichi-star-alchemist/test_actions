@@ -3,9 +3,9 @@ name: Frontend CI
 on:
   push:
     branches:
-      - "main"
+      - main
     paths:
-      - ""
+      - "frontend/"
 
 jobs:
   Lint_&_Test:
