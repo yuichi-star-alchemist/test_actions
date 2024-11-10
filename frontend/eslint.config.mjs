@@ -11,7 +11,19 @@ export default [
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   {
-    // `jsx-runtime`を追加してエラー無効化
-    extends: ["plugin:react/jsx-runtime"],
+    rules: {
+      "indent": ["error", 2],
+      "quotes": ["error", "double"],
+      // React import省略時のエラー無効化
+      "react/react-in-jsx-scope": "off",
+      // セミコロンなしスタイル用設定
+      "semi": ["error", "never", {"beforeStatementContinuationChars": "never"}],
+      "semi-spacing": ["error", {"after": true, "before": false}],
+      "semi-style": ["error", "first"],
+      "no-extra-semi": "error",
+      "no-unexpected-multiline": "error",
+      "no-unreachable": "error",
+      // -----------------------------
+    },
   },
 ];
