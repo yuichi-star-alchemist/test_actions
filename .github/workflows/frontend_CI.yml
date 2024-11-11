@@ -1,12 +1,16 @@
 name: Frontend CI
 
 on:
-  push:
+  pull_request:
     branches:
       - main
+      - develop
     paths:
       - "frontend/**"
-      - ".github/**"
+    types:
+      - edited
+      - opened
+      - reopened
 
 jobs:
   Lint_and_Test:
