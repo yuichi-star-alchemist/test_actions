@@ -22,7 +22,7 @@ export default [
       "no-extra-semi": "error",
       "no-unexpected-multiline": "error",
       "no-unreachable": "error",
-      // -----------------------------
+      // ------------------------
     },
   },
 ]
